@@ -5,3 +5,9 @@ ul li:first-child {
 ul li{
     display: none;
 }
+.acc div{
+    display: none;
+}
+.acc p{
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
 // jQuery=$;
 $(document).ready(function () {
     $('button').on('click', multiplyInput);
+    $('.acc p').on('click', accFunc);
 });
 
 function multiplyInput(){
@@ -20,14 +21,19 @@ function multiplyInput(){
     }
 }
 
+function accFunc() {
+    $(".acc p").css('color','black').next().css('display', 'none');
+    $(this).css('color','red').next().css('display', 'block');
+    // $(".acc div").not($(this).next()).css('display', 'none');
+}
 
 // eq(n) - выбирает элемент с индексом n из набора. Индекс начинается с 0.
 
 var i = 0;
 
-$(function () {
+$(function slider() {
     // установим интервал в одну секунду
-    var timer = setInterval(choose, 500);
+    setInterval(choose, 500);
 });
 
 function choose() {
