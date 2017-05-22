@@ -19,3 +19,25 @@ function multiplyInput(){
         $('#out').css('color','orange');
     }
 }
+
+
+// eq(n) - выбирает элемент с индексом n из набора. Индекс начинается с 0.
+
+var i = 0;
+
+$(function () {
+    // установим интервал в одну секунду
+    var timer = setInterval(choose, 500);
+});
+
+function choose() {
+    i++;
+    // выделит все элементы списка до элемента с индексом i
+    $("li:eq(" + (i - 1) + ")")
+        .css("display", "none");
+
+    // выделит элементы списка по индексу i
+    $("li:eq(" + i + ")")
+        .css("display", "block");
+
+}
