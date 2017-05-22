@@ -12,7 +12,7 @@ function multiplyInput(){
     console.log(multiplyAnswer);
     $('#out').html(multiplyAnswer);
 
-    if(multiplyAnswer >=100) {s
+    if(multiplyAnswer >=100) {
         $('#out').css('color','red');
     }
     else {
